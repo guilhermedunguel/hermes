@@ -14,17 +14,23 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9 
+          run_install: false
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: 'npm'
+          cache: 'pnpm'
 
       - name: Install dependencies
-        run: npm install
+        run: pnpm install --frozen-lockfile
 
       - name: Lint & Typecheck
-        run: npx turbo lint typecheck
+        run: pnpm exec turbo lint typecheck
 
       - name: Run Tests
-        run: npx turbo test
+        run: pnpm exec turbo test
