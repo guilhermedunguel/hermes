@@ -5,9 +5,11 @@
 ---
 
 ## 📝 Descrição
+
 O Hermes é uma plataforma inteligente projetada para otimizar o fluxo de comunicação entre equipes técnicas e gestores. Através de inteligência artificial, o sistema traduz atualizações de desenvolvimento em relatórios de progresso claros, objetivos e prontos para o consumo de stakeholders.
 
 ## ✨ Motivação
+
 A comunicação eficiente entre o setor técnico e os demais departamentos de uma empresa é um dos maiores desafios na gestão de projetos. Frequentemente, o "ruído" causado pelo uso de termos excessivamente técnicos dificulta a percepção do valor entregue.
 
 O Hermes nasceu para eliminar essa barreira:

@@ -1,0 +1,21 @@
+{
+	"name": "hermes",
+	"private": true,
+	"scripts": {
+		"build": "turbo run build",
+		"dev": "turbo run dev",
+		"lint": "turbo run lint",
+		"lint:fix": "biome check --write .",
+		"format": "turbo run format"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.3.11",
+		"prettier": "^3.7.4",
+		"turbo": "^2.7.5",
+		"typescript": "5.9.2"
+	},
+	"packageManager": "pnpm@9.0.0",
+	"engines": {
+		"node": ">=18"
+	}
+}
