@@ -34,3 +34,7 @@ jobs:
 
       - name: Run Tests
         run: pnpm exec turbo test
+        env: 
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          NODE_ENV: ${{ vars.NODE_ENV }}
+          FASTIFY_PORT: ${{ vars.FASTIFY_PORT }}

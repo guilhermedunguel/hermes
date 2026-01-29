@@ -6,5 +6,5 @@ app
 		port: env.FASTIFY_PORT,
 	})
 	.then(() => {
-		console.log("🚀 Server is running on port", env.FASTIFY_PORT);
+		console.log("HTTP Server Running at:", env.FASTIFY_PORT);
 	});

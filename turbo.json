@@ -5,15 +5,23 @@
 			"cache": false,
 			"persistent": true
 		},
+		"db:generate": {
+			"cache": false
+		},
+		"db:migrate": {
+			"cache": false
+		},
+		"db:studio": {
+			"cache": false,
+			"persistent": true
+		},
 		"lint": {
 			"cache": true
 		},
 		"test": {
 			"cache": false,
-			"persistent": true
-		},
-		"test:cov": {
-			"cache": true
+			"persistent": true,
+			"env": ["DATABASE_URL", "NODE_ENV", "FASTIFY_PORT"]
 		},
 		"format": {
 			"cache": true

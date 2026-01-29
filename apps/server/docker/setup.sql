@@ -1,0 +1,1 @@
+CREATE DATABASE hermes_test;
