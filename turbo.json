@@ -20,7 +20,8 @@
 		},
 		"test": {
 			"cache": false,
-			"persistent": true
+			"persistent": true,
+			"env": ["DATABASE_URL", "NODE_ENV", "FASTIFY_PORT"]
 		},
 		"format": {
 			"cache": true
