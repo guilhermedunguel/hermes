@@ -5,15 +5,22 @@
 			"cache": false,
 			"persistent": true
 		},
+		"db:generate": {
+			"cache": false
+		},
+		"db:migrate": {
+			"cache": false
+		},
+		"db:studio": {
+			"cache": false,
+			"persistent": true
+		},
 		"lint": {
 			"cache": true
 		},
 		"test": {
 			"cache": false,
 			"persistent": true
-		},
-		"test:cov": {
-			"cache": true
 		},
 		"format": {
 			"cache": true

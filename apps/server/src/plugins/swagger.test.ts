@@ -2,15 +2,14 @@ import request from "supertest";
 import { beforeAll, describe, expect, it, test } from "vitest";
 import { app } from "../app.ts";
 
-describe("routes/health", () => {
+describe("plugins/swagger.ts", async () => {
 	beforeAll(async () => {
 		await app.ready();
 	});
 
-	test("GET /health", async () => {
-		const result = await request(app.server).get("/health");
+	test("GET /docs", async () => {
+		const result = await request(app.server).get("/docs").redirects(1);
 
 		expect(result.status).toEqual(200);
-		expect(result.body).toEqual({ status: "ok" });
 	});
 });
