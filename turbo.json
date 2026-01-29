@@ -9,7 +9,8 @@
 			"cache": false
 		},
 		"db:migrate": {
-			"cache": false
+			"cache": false,
+			"env": ["DATABASE_URL", "NODE_ENV", "FASTIFY_PORT"]
 		},
 		"db:studio": {
 			"cache": false,
